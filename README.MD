@@ -15,7 +15,11 @@ With this package on, we can create, activate and set up a virtualenv with the f
 ```bash
 virtualenv -p python3.6 venv
 source venv/bin/activate
-pip3 install -r requirements.txt
+(venv) pip3 install -r requirements.txt
+```
+We now need to add the virtual environment into the jupyter kernel.
+```bash
+ipython kernel install --user --name=venv
 ```
 
 ### Demo and instructions for use
